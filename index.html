@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="css/card.css">
+	<title>ARAFA VOYAGES</title>
+</head>
+<body>
+<div class="center mt-5">
+	<div id="print">
+		<button class="btn btn-primary" onclick="printDiv('fly-card')">Imprimer</button>
+	</div>
+	<div id="fly-card">
+		<div class="top-wave">
+			<img src="images/top-wave.png" alt="wave">
+		</div>
+		<div class="card">
+			<div class="card-header">
+				<div class="card-avatar">
+					<img src="images/avatar.png" alt="avatar">
+				</div>
+				<div class="card-name">
+					<div class="country-flag">
+						<img src="images/coutry-flag.png" alt="burkina flag">
+					</div>
+					<div class="agency-name">
+						<h3>ARAFA VOYAGES</h3>
+						<p class="arabic">
+							عرفة ترافيل
+						</p>
+					</div>
+				</div>
+				<div class="card-country">
+					<div class="country-name">
+						<h2>Burkina Faso</h2>
+					</div>
+					<div class="embleme arabic">
+						بوركينا فاسو
+					</div>
+					<div class="rectangle">
+						<p>#BF 1208AP</p>
+					</div>
+				</div>
+			</div>
+			<div class="card-content">
+				<div class="card-encadrer-name">
+					<h3>ENCADREUR</h3>
+					<p class="arabic">إطار العمل</p>
+				</div>
+				<div class="card-user-details">
+					<table class="user-info-table">
+						<tr>
+							<td>Nom</td>
+							<td>:</td>
+						</tr>
+						<tr>
+							<td>Prénom(s)</td>
+							<td>:</td>
+						</tr>
+						<tr>
+							<td>Passport N°</td>
+							<td>:</td>
+						</tr>
+					</table>
+					<table class="user-info-table">
+						<tr>
+							<td>Toto</td>
+						</tr>
+						<tr>
+							<td>TATA TITI</td>
+						</tr>
+						<tr>
+							<td>
+								123456789
+							</td>
+						</tr>
+					</table>
+					<div class="table-arabic-wraper">
+						<table class="user-info-table table-arabic">
+							<tr>
+								<td>اسم العائلة</td>
+								<td>:</td>
+							</tr>
+							<tr>
+								<td>اللقب</td>
+								<td>:</td>
+							</tr>
+							<tr>
+								<td>رقم جواز السفر</td>
+								<td>:</td>
+							</tr>
+						</table>
+					</div>
+				</div>
+			</div>
+			<div class="card-footer">
+				<div class="user-to-contact">
+					Personne à contacter en cas de besoin
+				</div>
+				<div class="user-to-contact arabic">
+					شخص للتواصل في حال الضرورة
+				</div>
+			</div>
+			<div class="card-footer-contacts">
+				<p>+966 05 83 00 61 29 / +226 71 99 99 18</p>
+			</div>
+		</div>
+		<div class="bottom-wave">
+			<img src="images/bottom-wave.png" alt="wave">
+		</div>
+	</div>
+</div>
+<script>
+	function printDiv(divName) {
+		const printContents = document.getElementById(divName).innerHTML;
+		const originalContents = document.body.innerHTML;
+		document.body.innerHTML = printContents;
+		window.print();
+		document.body.innerHTML = originalContents;
+	}
+</script>
+</body>
+</html>
